@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ouvrir une image</title>
+</head>
+<body>
+    <h2>Evènements à venir :</h2>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: white;
+            background-image: url('static/images/fond.jpg'); /* Chemin vers votre image de fond */
+            background-size: cover; /* Redimensionner l'image pour couvrir toute la surface */
+            background-position: center top;
+            margin: 0;
+            padding: 0;
+            text-align: center; /* Centrer le texte horizontalement */
+            margin-top: 50px; /* Marge supérieure pour déplacer le texte vers le bas */
+        }
+    </style>
+    <img src="{{ url_for('static', filename='images/Capture décran 2024-05-25135612.png') }}" alt="Mon Image">
+</body>
+</html>
